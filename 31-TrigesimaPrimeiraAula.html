@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Manipulando CSS com JavaScript</title>
+
+    <script>
+
+        function mudar() {
+            var palavra = document.getElementsByTagName("h1")[0];
+            //CSS
+            palavra.style.color = "#00f0a3";
+            palavra.style.fontSize = "25px";
+            //exibindo
+            palavra.innerHTML = "Curso de JavaScript";
+        }
+
+        function apertar() {
+
+            var texto = document.getElementById("paragrafo");
+
+            texto.style.backgroundColor = "red";
+            texto.style.color = "white";
+
+            texto.innerHTML = " Palvra desconhessaide" + soma;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+    <button onclick="mudar()">Mude Aqui</button>
+
+    <p id="paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis eros tincidunt diam sagittis, non auctor
+        tortor sodales. Integer ligula nisi, convallis sit amet nulla nec, interdum fermentum nisi. Vivamus sagittis
+        nisi quis urna porttitor, eget tincidunt sapien volutpat. Nam quis ipsum luctus, dictum ipsum et, condimentum
+        sapien. Proin gravida lorem sit amet purus dictum, eu venenatis metus luctus. Donec lobortis turpis metus, sit
+        amet pretium dui viverra et. Curabitur id dui nec tellus bibendum imperdiet. Quisque tincidunt neque quis
+        pharetra bibendum.
+    </p>
+    <button onclick="apertar()"> Aperte Aqui </button>
+</body>
+
+</html>

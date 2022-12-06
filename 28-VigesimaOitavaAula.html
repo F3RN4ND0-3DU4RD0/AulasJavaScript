@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Seletor HTML</title>
+    <!--JS-->
+    <script>
+        //Criando função apertar()
+        function apertar(){
+
+            //Criar uma variável
+            var texto = document.getElementsByTagName("h1")[0];
+            
+            //Exibir o que está na tag
+            alert(texto.innerHTML);
+        }
+        function clicar(){
+            var clique = document.getElementsByTagName("h2")[3]
+
+            alert(clique.innerHTML);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="apertar()"> Clique Aqui </button>
+
+    <h1>Conhecimento</h1>
+    <h1>Tecnologia da Informação</h1>
+    <h1>Jogos</h1>
+
+    <button onclick="clicar()"> Selecionar</button>
+    <h2>Jogo da Velha</h2>
+    <h2> Panelada </h2>
+    <h2> Visual Studio Code</h2>
+    <h2> Brasil </h2>
+</body>
+</html>

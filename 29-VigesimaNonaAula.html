@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Seletor Classe</title>
+    
+    <script>
+        //Função
+        function exibirtexto(){
+
+            //Capturando a classe
+            var campotexto = document.getElementsByClassName("texto")[2];
+
+            //Mostrando
+            alert(campotexto.innerHTML);
+        }
+        function Mostrar(){
+            var campo = document.getElementsByClassName("campo", "textual")[0];
+
+            alert(campo.innerHTML);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="exibirtexto()"> Clique Aqui</button>
+    <h1 class="texto"> Título h1 </h1>
+    <h2 class="texto"> Título h2 </h2>
+    <p class="texto"> Parágrafo </p>
+
+    <button onclick="Mostrar()"> Clique para a felicidade do desenvolvedor </button>
+    <p class="campo textual">
+        Paragráfo P
+    
+    </p>
+    <h3 class="campo textual">
+            Titulo em h3
+        </h3>
+        <li class="campo textual">
+            Item li
+        </li>
+</body>
+</html>
