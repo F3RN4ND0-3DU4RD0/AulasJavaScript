@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--Nesta aula implemento a tag (Script)-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Aula sobre Estrutura de JavaScript</title>
+    <!--JS-->
+    <script>
+    function Mensagem(){
+        //Criando a variável
+        var prato = document.getElementById("Comida").value;
+
+        //Exibindo a refeição
+            alert(prato);
+        }
+    </script>
+</head>
+<body>
+    <select onchange="Mensagem()" id="Comida">
+        <option> Escolha sua refeição </option>
+        <option> Macarronada </option>
+        <option> Refrigerante </option>
+        <option> Pizza </option>
+        <option> Chocolate </option>
+    </select>
+</body>
+</html>

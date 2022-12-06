@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Sobre os eventos de teclado -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Aula sobre Eventos de tecaldo</title>
+    <!--JS-->
+    <script>
+
+        //Criando a função para o ONKEYUP
+        function exibir() {
+            var texto = document.getElementById("campotexto").value;
+
+            alert(texto);
+        }
+        //Criando a função para ONKEYDOWN
+        function mostrar() {
+            var text = document.getElementById("campo").value;
+
+            alert(text);
+        }
+        //Criando a função para ONKEYPRESS
+        function apresentar() {
+            var txt = document.getElementById("campotxt").value;
+
+            alert(txt);
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <input type="text" id="campotexto" onkeyup="exibir()" /> <br />
+    <input type="text" id="campo" onkeydown="mostrar()" /> <br />
+    <input type="text" id="campotxt" onkeypress="apresentar()" />
+
+
+
+</body>
+
+</html>
